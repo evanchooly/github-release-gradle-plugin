@@ -11,10 +11,11 @@ buildscript {
     repositories {
         mavenLocal()
         mavenCentral()
+        jcenter()
     }
 
     dependencies {
-        classpath 'org.gradle.api.plugins:gradle-nexus-plugin:0.3'
+        classpath 'org.gradle.api.plugins:gradle-nexus-plugin:0.4'
     }
 }
 
@@ -40,12 +41,12 @@ task javadocJar(type: Jar) {
     classifier = 'javadoc'
     from javadoc
 }
-*/
 
 artifacts {
     archives sourcesJar
     archives javadocJar
 }
+*/
 
 /*
 signing {
